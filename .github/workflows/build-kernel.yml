@@ -22,7 +22,7 @@ jobs:
       - name: Pull toolchain
         run: |
           sudo apt install wget -y
-          mkdir clang && wget https://github.com/ZyCromerZ/Clang/releases/download/17.0.0-20230718-release/Clang-17.0.0-20230718.tar.gz -O clang-17.tar.gz & tar -C clang/ -xf clang-*.tar.gz
+          mkdir clang && wget https://github.com/ZyCromerZ/Clang/releases/download/17.0.0-20230718-release/Clang-17.0.0-20230718.tar.gz -O clang-17.tar.gz && tar -C clang/ -xf clang-*.tar.gz
 
       - name: Pull kernel source
         run: |
